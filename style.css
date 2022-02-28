@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF));
+  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: black;
+  height: 50px;
+}
+
+header i {
+  color: white;
+  font-size: 2rem;
+  float: right;
+  margin-right: 5%;
+}
+
+section.billboard {
+  background: url("assets/mobile_Background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  bottom: 20px;
+}
+
+section.billboard p {
+  font-family: 'Advent Pro', sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 50%;
+  padding-right: 10;
+  padding-left: 3%;
+  font-size: 1.2rem;
+}
+
+section.billboard .developer {
+  position: relative;
+  bottom: 2%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 5em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.billboard .divider {
+  text-align: center;
+}
+
+section.billboard .contacts {
+  text-align: center;
+  margin-top: 10%;
+}
+
+section.billboard .contacts img {
+  width: 5%;
+}
+
+section.cosmetic .it_berries_container {
+  text-align: center;
+}
+
+section.cosmetic .it_berries_container .itLogo {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  width: 90%;
+  position: relative;
+  top: 10vh;
+}
+
+section.cosmetic .creativity {
+  background-color: black;
+  position: relative;
+  bottom: 10vh;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.cosmetic .creativity h3 {
+  text-align: center;
+  padding-top: 10%;
+  font-size: 2rem;
+}
+
+section.cosmetic .creativity p {
+  padding: 0 8% 0 8%;
+  text-align: justify;
+}
+
+section.cosmetic .creativity p .more {
+  display: none;
+}
+
+section.cosmetic .creativity .button {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+section.cosmetic .creativity .button button {
+  padding: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-left: 1.8px solid white;
+  border-right: 1.8px solid white;
+}
+
+section.aboutMe {
+  margin-top: 20%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.aboutMe h1 {
+  border: 2px solid black;
+  width: 40%;
+  margin-left: 27%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.aboutMe p {
+  text-align: justify;
+  padding: 0 8% 0 8%;
+}
+
+.divider-container {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.divider-container img {
+  width: 60%;
+}
+
+section.brief {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10%;
+}
+
+section.brief div {
+  padding: 0 10% 0 10%;
+}
+
+section.brief div .brief-heading {
+  position: relative;
+  left: 10%;
+  bottom: 5vh;
+}
+
+section.brief div p {
+  text-align: justify;
+  position: relative;
+  bottom: 5vh;
+}
+
+section.skills {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20%;
+}
+
+section.skills h1 {
+  border: 2px solid black;
+  width: 20%;
+  margin-left: 28%;
+  padding-left: 12%;
+  padding-right: 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.skills h2 {
+  font-size: 2rem;
+  border: none;
+  font-size: 2.8rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 20%;
+}
+
+section.skills .tech {
+  margin-left: 37%;
+}
+
+section.skills .tech img {
+  display: block;
+  margin-bottom: 10%;
+}
+
+section.skills .tech .tech-text {
+  margin-left: 10%;
+}
+
+section.projects .projects-background {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Smooch Sans', sans-serif;
+  background-image: url("assets/projectsBack.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 20vh;
+}
+
+section.projects h1 {
+  color: white;
+  border: 2px solid white;
+  width: 100px;
+  margin-left: 35%;
+  padding-left: 40px;
+  padding-right: 6px;
+  position: relative;
+  top: 30%;
+}
+
+section.projects nav {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Smooch Sans', sans-serif;
+  color: #d1cfcf;
+  background-color: #272626;
+  position: relative;
+  bottom: 5.2vh;
+  font-size: 2rem;
+}
+
+section.projects nav ul {
+  position: relative;
+  right: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+}
+
+section.projects nav ul li {
+  border-bottom: 1.5px solid #b9b8b8;
+}
+
+section.projects nav ul li:last-child {
+  position: relative;
+  margin-top: 20%;
+  margin-bottom: 30%;
+}
+
+section.projects .project-links {
+  position: relative;
+  bottom: 12vh;
+}
+
+section.projects .project-links img {
+  width: 100%;
+}
+
+section.contacts h1 {
+  border: 2px solid black;
+  width: 20%;
+  margin-left: 28%;
+  padding-left: 5%;
+  padding-right: 15%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.contacts form {
+  text-align: center;
+  margin-top: 15%;
+}
+
+section.contacts form input, section.contacts form textarea {
+  background: transparent;
+  border: none;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  margin-top: 8%;
+}
+
+section.contacts form input {
+  padding: 5%;
+}
+
+section.contacts form textarea {
+  position: relative;
+}
+
+section.contacts form .submit-button {
+  border-bottom: none;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-top: 10vh;
+  width: 30%;
+}
+
+footer {
+  margin-top: 20%;
+  background-color: black;
+  color: #e0e0e0;
+  height: 34vh;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+footer .back-to-top i {
+  position: absolute;
+  left: 48%;
+  bottom: -775vh;
+}
+
+footer .back-to-top a {
+  position: relative;
+  top: 8vh;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 30%;
+  right: 5%;
+}
+
+footer .copy-rights {
+  position: relative;
+  top: 29%;
+}
+/*# sourceMappingURL=style.css.map */
