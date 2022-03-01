@@ -294,8 +294,20 @@ footer{
     .back-to-top{
 
         i{
-            position:absolute;
-            left:48%;  
+            position:relative;
+            top:3.5vh;
+            left:16%; 
+            animation-name:top;
+            animation-duration:0.9s;
+            animation-iteration-count:infinite;
+            @keyframes top {
+                from{
+                    top:2.5vh;
+                }
+                to{
+                  top:3.7vh;
+                }
+            } 
         }
         a{
             position:relative;

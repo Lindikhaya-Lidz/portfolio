@@ -316,8 +316,33 @@ footer {
 }
 
 footer .back-to-top i {
-  position: absolute;
-  left: 48%;
+  position: relative;
+  top: 3.5vh;
+  left: 16%;
+  -webkit-animation-name: top;
+          animation-name: top;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes top {
+  from {
+    top: 2.5vh;
+  }
+  to {
+    top: 3.7vh;
+  }
+}
+
+@keyframes top {
+  from {
+    top: 2.5vh;
+  }
+  to {
+    top: 3.7vh;
+  }
 }
 
 footer .back-to-top a {
