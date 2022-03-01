@@ -117,7 +117,8 @@ section.aboutMe{
     text-align:center;
     font-family: 'Open Sans', sans-serif;
     h1{
-        border:2px solid black;
+        border-top:2px solid black;
+        border-bottom:2px solid black;
         width:40%;
         margin-left:27%;
         font-family: 'Montserrat', sans-serif;
@@ -161,9 +162,10 @@ section.skills{
     font-family: 'Open Sans', sans-serif;
     margin-top:20%;
     h1{
-        border:2px solid black;
+        border-top:2px solid black;
+        border-bottom:2px solid black;
         width:20%;
-        margin-left:28%;
+        margin-left:29%;
         padding-left:12%;
         padding-right:10%;
         font-family: 'Montserrat', sans-serif; 
@@ -199,9 +201,10 @@ section.projects{
     }
     h1{
         color:white;
-        border:2px solid white;
+        border-top:2px solid white;
+        border-bottom:2px solid white;
         width:100px;
-        margin-left:35%;
+        margin-left:29%;
         padding-left:40px;
         padding-right:6px;
         position:relative;
@@ -246,7 +249,8 @@ section.projects{
 
 section.contacts{
     h1{
-        border:2px solid black;
+        border-top:2px solid black;
+        border-bottom:2px solid black;
         width:20%;
         margin-left:28%;
         padding-left:5%;
@@ -279,19 +283,19 @@ section.contacts{
         }
     }
 }
+
 footer{
     margin-top:20%;
     background-color:black;
     color:rgb(224, 224, 224);
-    height:34vh;
+    height:250px;
     font-family: 'Montserrat', sans-serif;
     text-align:center; 
     .back-to-top{
 
         i{
             position:absolute;
-            left:48%;
-            bottom:-775vh;   
+            left:48%;  
         }
         a{
             position:relative;
@@ -307,7 +311,7 @@ footer{
     }
     .copy-rights{
         position:relative;
-        top:29%;
+        top:39%;
     }
 }
 
