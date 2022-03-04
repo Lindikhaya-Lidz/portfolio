@@ -17,27 +17,37 @@ a {
 header {
   background-color: black;
   height: 50px;
+  color: #dadada;
+}
+
+header .logo {
+  width: 6%;
+  position: absolute;
+  top: 2%;
+}
+
+header ul {
+  display: none;
 }
 
 header i {
-  color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   float: right;
   margin-right: 5%;
 }
 
 section.billboard {
-  background: url("assets/mobile_Background.png");
+  background: url("assets/desktopBackground.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   bottom: 20px;
+  color: #fafafa;
 }
 
-section.billboard p {
+section.billboard .billboard-content p {
   font-family: 'Advent Pro', sans-serif;
-  color: white;
   text-align: center;
   padding-top: 50%;
   padding-right: 10;
@@ -45,28 +55,38 @@ section.billboard p {
   font-size: 1.2rem;
 }
 
-section.billboard .developer {
+section.billboard .billboard-content .developer {
   position: relative;
   bottom: 2%;
   font-weight: bold;
   text-align: center;
   font-size: 1.7rem;
   font-weight: 5em;
-  color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
-section.billboard .divider {
+section.billboard .billboard-content .divider {
   text-align: center;
 }
 
-section.billboard .contacts {
+section.billboard .billboard-content .contacts {
   text-align: center;
   margin-top: 10%;
 }
 
-section.billboard .contacts img {
-  width: 5%;
+section.billboard .billboard-content .contacts img {
+  width: 7.5%;
+  margin-right: 5%;
+  position: relative;
+  left: 2.5%;
+}
+
+section.billboard .billboard-content-desktop {
+  display: none;
+}
+
+section.cosmetic {
+  color: #dadada;
 }
 
 section.cosmetic .it_berries_container {
@@ -85,7 +105,6 @@ section.cosmetic .creativity {
   background-color: black;
   position: relative;
   bottom: 10vh;
-  color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -93,6 +112,7 @@ section.cosmetic .creativity h3 {
   text-align: center;
   padding-top: 10%;
   font-size: 2rem;
+  padding-right: 1%;
 }
 
 section.cosmetic .creativity p {
@@ -104,12 +124,16 @@ section.cosmetic .creativity p .more {
   display: none;
 }
 
-section.cosmetic .creativity .button {
+section.cosmetic .creativity .ITB-logo {
+  display: none;
+}
+
+section.cosmetic .creativity .button-container {
   text-align: center;
   padding-bottom: 10%;
 }
 
-section.cosmetic .creativity .button button {
+section.cosmetic .creativity .button-container button {
   padding: 5%;
   padding-right: 10%;
   padding-left: 10%;
@@ -147,7 +171,7 @@ section.aboutMe p {
 }
 
 .divider-container img {
-  width: 60%;
+  width: 300px;
 }
 
 section.brief {
@@ -174,19 +198,20 @@ section.brief div p {
 section.skills {
   font-family: 'Open Sans', sans-serif;
   margin-top: 20%;
+  text-align: center;
 }
 
-section.skills h1 {
+section.skills .skills-mobile h1 {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   width: 20%;
-  margin-left: 29%;
+  margin-left: 27%;
   padding-left: 12%;
   padding-right: 10%;
   font-family: 'Montserrat', sans-serif;
 }
 
-section.skills h2 {
+section.skills .skills-mobile h2 {
   font-size: 2rem;
   border: none;
   font-size: 2.8rem;
@@ -195,17 +220,186 @@ section.skills h2 {
   margin-top: 20%;
 }
 
-section.skills .tech {
+section.skills .skills-mobile .tech img {
+  display: block;
+  margin-bottom: 10%;
   margin-left: 37%;
 }
 
-section.skills .tech img {
-  display: block;
-  margin-bottom: 10%;
+section.skills .skills-mobile .tech .tech-text {
+  margin-right: 3%;
 }
 
-section.skills .tech .tech-text {
-  margin-left: 10%;
+.skills-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header .logo {
+    position: absolute;
+    top: 1.6%;
+    width: 4%;
+  }
+  header i {
+    display: none;
+  }
+  header ul {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 5%;
+    width: 40%;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  header ul li {
+    margin-right: 11%;
+    padding: 2%;
+  }
+  header ul li a {
+    color: white;
+  }
+  header ul li:last-child {
+    background-color: white;
+    border-radius: 25px;
+    height: 10px;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 1.5vw;
+  }
+  header ul li:last-child a {
+    color: black;
+  }
+  section.billboard .billboard-content {
+    display: none;
+  }
+  section.billboard .billboard-content-desktop {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    top: 20%;
+    color: #f1f1f1;
+    font-family: 'Advent Pro', sans-serif;
+  }
+  section.billboard .billboard-content-desktop .developer {
+    font-family: 'Montserrat', sans-serif;
+  }
+  section.billboard .billboard-content-desktop .divider img {
+    position: relative;
+    right: 1.3%;
+  }
+  section.billboard .billboard-content-desktop .contacts img {
+    margin-right: 2%;
+  }
+  section.cosmetic .creativity {
+    font-size: .9rem;
+    padding-bottom: 10%;
+    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+  }
+  section.cosmetic .creativity h3 {
+    padding: 0;
+    float: left;
+    margin-left: 8%;
+  }
+  section.cosmetic .creativity p {
+    text-align: none;
+    padding: 11% 30% 2% 8%;
+  }
+  section.cosmetic .creativity .ITB-logo {
+    display: inline;
+    position: absolute;
+    width: 20%;
+    right: 1%;
+  }
+  section.cosmetic .creativity .button-container {
+    float: left;
+    margin-left: 8%;
+  }
+  section.cosmetic .creativity .button-container button {
+    padding: 35%;
+  }
+  section.aboutMe {
+    font-size: .9rem;
+    margin: 0;
+  }
+  section.aboutMe h1 {
+    width: 20%;
+    position: relative;
+    left: 10%;
+  }
+  section.aboutMe p {
+    margin-top: -9.9%;
+    margin-bottom: -8%;
+  }
+  .divider-container {
+    padding-bottom: 10%;
+    padding-right: 6%;
+  }
+  .second-divider {
+    padding-top: 12%;
+    padding-right: 7.5%;
+  }
+  section.brief {
+    margin-top: -20%;
+    margin-bottom: -30%;
+    font-size: .9rem;
+    display: -ms-grid;
+    display: grid;
+    padding-left: 4%;
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
+  }
+  section.brief div:last-child {
+    position: relative;
+    left: 55%;
+  }
+  section.skills {
+    display: none;
+  }
+  section.skills-desktop {
+    display: block;
+    font-size: .9rem;
+    margin-top: -10%;
+  }
+  section.skills-desktop h1 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 13%;
+    margin-left: 39%;
+    padding-left: 7%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  section.skills-desktop h2, section.skills-desktop .tech {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20%;
+  }
+  section.skills-desktop .tech {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20%;
+  }
+  section.skills-desktop .tech div {
+    margin-top: 7vh;
+  }
+  section.skills-desktop .tech div:last-child img {
+    width: 80%;
+    position: relative;
+    bottom: 2.3vw;
+    right: 16%;
+  }
+  section-projects nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: 48%;
+        grid-template-columns: 48%;
+  }
+  footer .back-to-top i {
+    padding-right: 3.4vw;
+  }
 }
 
 section.projects .projects-background {
@@ -214,7 +408,7 @@ section.projects .projects-background {
   background-image: url("assets/projectsBack.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vw;
 }
 
 section.projects h1 {
@@ -223,8 +417,8 @@ section.projects h1 {
   border-bottom: 2px solid white;
   width: 100px;
   margin-left: 29%;
-  padding-left: 40px;
-  padding-right: 6px;
+  padding-left: 15%;
+  padding-right: 3%;
   position: relative;
   top: 30%;
 }
@@ -236,7 +430,7 @@ section.projects nav {
   background-color: #272626;
   position: relative;
   bottom: 5.2vh;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 section.projects nav ul {
@@ -318,7 +512,7 @@ footer {
 footer .back-to-top i {
   position: relative;
   top: 3.5vh;
-  left: 16%;
+  left: 12.4%;
   -webkit-animation-name: top;
           animation-name: top;
   -webkit-animation-duration: 0.9s;
@@ -348,6 +542,7 @@ footer .back-to-top i {
 footer .back-to-top a {
   position: relative;
   top: 8vh;
+  right: 3.4%;
 }
 
 footer .social-media {
@@ -364,5 +559,87 @@ footer .social-media {
 footer .copy-rights {
   position: relative;
   top: 39%;
+  font-size: .7rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 1.8rem;
+  }
+  header {
+    height: 80px;
+  }
+  header i {
+    margin-top: 1%;
+    font-size: 3.3rem;
+  }
+  section.billboard {
+    bottom: 29px;
+  }
+  section.billboard .billboard-content {
+    position: relative;
+    bottom: 20vw;
+  }
+  section.billboard .billboard-content p {
+    font-size: 1.4rem;
+    padding-bottom: 2%;
+    padding-right: 2%;
+  }
+  section.cosmetic .creativity h3 {
+    padding-right: 3%;
+  }
+  section.aboutMe {
+    margin-top: 0;
+  }
+  section.aboutMe h1 {
+    margin-bottom: 15%;
+  }
+  section.skills .tech img {
+    margin-left: 34%;
+    width: 30%;
+  }
+  section.skills .tech img:last-child {
+    margin: 0;
+    margin-left: 35%;
+    width: 0%;
+  }
+  section.projects h1 {
+    padding-right: 20%;
+    right: 2.5%;
+  }
+  section.projects nav ul li a {
+    position: relative;
+    left: 16%;
+  }
+  section.projects nav ul li:last-child {
+    margin-left: 16%;
+  }
+  section.contacts h1 {
+    padding-left: 8.5%;
+  }
+  section.contacts form input {
+    width: 60%;
+  }
+  section.contacts form textarea {
+    width: 70%;
+  }
+  footer {
+    height: 370px;
+  }
+  footer .back-to-top {
+    padding-right: 5%;
+  }
+  footer .back-to-top i {
+    font-size: 2.5rem;
+  }
+  footer ul li {
+    margin-top: 3%;
+  }
+  footer ul li a img {
+    width: 150%;
+  }
+  footer .copy-rights {
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
