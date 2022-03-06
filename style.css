@@ -234,6 +234,72 @@ section.skills .skills-mobile .tech .tech-text {
   display: none;
 }
 
+section.projects {
+  background-color: #272626;
+}
+
+section.projects .projects-background {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Smooch Sans', sans-serif;
+  background-image: url("assets/projectsBack.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 30vw;
+}
+
+section.projects h1 {
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100px;
+  margin-left: 29%;
+  padding-left: 15%;
+  padding-right: 3%;
+  position: relative;
+  top: 30%;
+}
+
+section.projects nav {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Smooch Sans', sans-serif;
+  color: #d1cfcf;
+  position: relative;
+  bottom: 5.2vh;
+  font-size: 1.8rem;
+}
+
+section.projects nav ul {
+  position: relative;
+  right: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+}
+
+section.projects nav ul li {
+  border-bottom: 1.5px solid #b9b8b8;
+}
+
+section.projects nav ul li:last-child {
+  position: relative;
+  margin-top: 20%;
+  margin-bottom: 30%;
+}
+
+section.projects .project-links {
+  position: relative;
+  bottom: 12vh;
+}
+
+section.projects .project-links img {
+  width: 100%;
+}
+
+section.projects .project-links .desktop-projects {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   header .logo {
     position: absolute;
@@ -384,81 +450,52 @@ section.skills .skills-mobile .tech .tech-text {
   section.skills-desktop .tech div {
     margin-top: 7vh;
   }
+  section.skills-desktop .tech div div {
+    margin-left: 13%;
+  }
   section.skills-desktop .tech div:last-child img {
     width: 80%;
     position: relative;
     bottom: 2.3vw;
     right: 16%;
   }
-  section-projects nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-grid-columns: 48%;
-        grid-template-columns: 48%;
+  section.skills-desktop .tech div:last-child div {
+    position: relative;
+    bottom: 4.1vw;
+  }
+  section.projects nav ul {
+    display: -ms-grid;
+    display: grid;
+  }
+  section.projects .project-links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.4% 33.4% 33.4%;
+        grid-template-columns: 33.4% 33.4% 33.4%;
+  }
+  section.projects .project-links img {
+    height: 20vw;
+  }
+  section.projects .project-links .desktop-projects {
+    display: inline;
+  }
+  section.contacts {
+    font-size: .9rem;
+    margin-top: 5%;
+  }
+  section.contacts #contacts {
+    position: relative;
+    left: 8%;
+    width: 0;
+    padding-right: -70%;
+    padding-left: -60%;
+  }
+  section.contacts form #input {
+    width: 20%;
   }
   footer .back-to-top i {
     padding-right: 3.4vw;
   }
-}
-
-section.projects .projects-background {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Smooch Sans', sans-serif;
-  background-image: url("assets/projectsBack.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 30vw;
-}
-
-section.projects h1 {
-  color: white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  width: 100px;
-  margin-left: 29%;
-  padding-left: 15%;
-  padding-right: 3%;
-  position: relative;
-  top: 30%;
-}
-
-section.projects nav {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Smooch Sans', sans-serif;
-  color: #d1cfcf;
-  background-color: #272626;
-  position: relative;
-  bottom: 5.2vh;
-  font-size: 1.8rem;
-}
-
-section.projects nav ul {
-  position: relative;
-  right: 0%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 48% 48%;
-      grid-template-columns: 48% 48%;
-}
-
-section.projects nav ul li {
-  border-bottom: 1.5px solid #b9b8b8;
-}
-
-section.projects nav ul li:last-child {
-  position: relative;
-  margin-top: 20%;
-  margin-bottom: 30%;
-}
-
-section.projects .project-links {
-  position: relative;
-  bottom: 12vh;
-}
-
-section.projects .project-links img {
-  width: 100%;
 }
 
 section.contacts h1 {

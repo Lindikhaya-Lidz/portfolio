@@ -221,6 +221,69 @@ section.skills{
 }
 
 
+
+section.projects{
+    background-color:rgb(39, 38, 38);
+    .projects-background{
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Smooch Sans', sans-serif;
+        background-image:url('assets/projectsBack.jpg');
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        height:30vw;
+    }
+    h1{
+        color:white;
+        border-top:2px solid white;
+        border-bottom:2px solid white;
+        width:100px;
+        margin-left:29%;
+        padding-left:15%;
+        padding-right:3%;
+        position:relative;
+        top:30%;
+        
+    }
+    nav{
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Smooch Sans', sans-serif;
+        color:rgb(209, 207, 207);        
+        position:relative;
+        bottom:5.2vh;
+        font-size:1.8rem;
+        ul{
+            position:relative;
+            right:0%;
+            display:grid;
+            grid-template-columns:48% 48%;
+
+            li{
+                //margin:10%;
+                border-bottom:1.5px solid rgb(185, 184, 184);
+                &:last-child{
+                   position:relative;
+                   margin-top:20%;
+                   margin-bottom:30%;      
+                }  
+            }
+            
+
+        }
+    }
+    .project-links{
+        position:relative;
+        bottom:12vh;
+        img{
+            width:100%;
+        }
+        .desktop-projects{
+            display:none;
+        }
+    }
+}
+
+
+
 //large screen tablet
 @media (min-width:1024px){
     header{
@@ -381,7 +444,9 @@ section.skills{
             grid-template-columns:20% 20% 20% 20%;
             div{
                 margin-top:7vh;
-                
+                div{
+                    margin-left:13%;
+                }
                 &:last-child{
                     img{
                         width:80%;
@@ -389,16 +454,45 @@ section.skills{
                         bottom:2.3vw;
                         right:16%;
                     }
+                    div{
+                        position:relative;
+                        bottom:4.1vw;
+                    }
                 }
             }
         }
     }
 
-    section-projects{
+    section.projects{
         nav{
             ul{
-                display:flex;
-                grid-template-columns:48%;
+                display:grid;
+            }       
+        }
+        .project-links{
+            display:grid;
+            grid-template-columns:33.4% 33.4% 33.4%;
+            img{
+                height:20vw;
+            }
+            .desktop-projects{
+                display:inline;
+            }
+        }
+    }
+    section.contacts{
+        font-size:.9rem;
+        margin-top:5%;
+        #contacts{
+            position:relative;
+            left:8%;
+            width:0;
+            padding-right:-70%;
+            padding-left:-60%;
+        }
+        form{
+            #input{
+               width:20%;
             }
         }
     }
@@ -411,65 +505,6 @@ section.skills{
     }
 
 }
-
-
-section.projects{
-    .projects-background{
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Smooch Sans', sans-serif;
-        background-image:url('assets/projectsBack.jpg');
-        background-size:100% 100%;
-        background-repeat:no-repeat;
-        height:30vw;
-    }
-    h1{
-        color:white;
-        border-top:2px solid white;
-        border-bottom:2px solid white;
-        width:100px;
-        margin-left:29%;
-        padding-left:15%;
-        padding-right:3%;
-        position:relative;
-        top:30%;
-        
-    }
-    nav{
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Smooch Sans', sans-serif;
-        color:rgb(209, 207, 207);
-        background-color:rgb(39, 38, 38);
-        position:relative;
-        bottom:5.2vh;
-        font-size:1.8rem;
-        ul{
-            position:relative;
-            right:0%;
-            display:grid;
-            grid-template-columns:48% 48%;
-
-            li{
-                //margin:10%;
-                border-bottom:1.5px solid rgb(185, 184, 184);
-                &:last-child{
-                   position:relative;
-                   margin-top:20%;
-                   margin-bottom:30%;      
-                }  
-            }
-            
-
-        }
-    }
-    .project-links{
-        position:relative;
-        bottom:12vh;
-        img{
-            width:100%;
-        }
-    }
-}
-
 
 section.contacts{
     h1{
