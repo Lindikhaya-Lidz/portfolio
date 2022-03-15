@@ -30,8 +30,8 @@ header .logo {
 header #mobile-menu {
   position: absolute;
   top: -2vw;
-  display: none;
   width: 88%;
+  display: none;
   background-color: black;
   opacity: 0.9;
   z-index: 2;
@@ -61,7 +61,12 @@ header #mobile-menu {
 
 header #mobile-menu li {
   padding: 5%;
-  margin-left: 32%;
+  margin-left: 29%;
+}
+
+header #mobile-menu i {
+  position: relative;
+  bottom: 32vh;
 }
 
 header i {
