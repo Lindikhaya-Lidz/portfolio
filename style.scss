@@ -1,5 +1,6 @@
 
 body{
+    overflow-x:hidden;
     margin:0;
     padding:0;
     background: radial-gradient(50% 50% at 50% 50%,
@@ -24,8 +25,28 @@ header{
         position:absolute;
         top:2%;
     }
-    ul{
-        display:none;
+    #mobile-menu{
+       position:absolute;
+       top:-2vw;
+       display:none;
+       width:88%;
+       background-color:black;
+       opacity:0.9;
+       z-index:2;
+       animation-name:slide-down;
+       animation-duration:.3s;
+       @keyframes slide-down{
+           from{
+               top:-70vw;
+           }
+           to{
+               top:-2vw;
+           }
+       }
+       li{
+           padding:5%;
+           margin-left:32%;
+       }
     }
     i{
       font-size:2.5rem;
@@ -148,6 +169,14 @@ section.aboutMe{
         text-align:justify;
         padding:0 8% 0 8%;
     }
+
+    .man-uli{
+        width:15%;
+        margin-right:80%;
+        opacity:0.7;
+        margin-bottom:-20%;
+                                                                                                      
+    }
 }
 
 .divider-container{
@@ -240,39 +269,15 @@ section.projects{
         margin-left:29%;
         padding-left:15%;
         padding-right:3%;
+        margin-bottom:10%;
         position:relative;
         top:30%;
         
     }
-    nav{
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Smooch Sans', sans-serif;
-        color:rgb(209, 207, 207);        
-        position:relative;
-        bottom:5.2vh;
-        font-size:1.8rem;
-        ul{
-            position:relative;
-            right:0%;
-            display:grid;
-            grid-template-columns:48% 48%;
 
-            li{
-                //margin:10%;
-                border-bottom:1.5px solid rgb(185, 184, 184);
-                &:last-child{
-                   position:relative;
-                   margin-top:20%;
-                   margin-bottom:30%;      
-                }  
-            }
-            
-
-        }
-    }
     .project-links{
         position:relative;
-        bottom:12vh;
+        //bottom:10vh;
         img{
             width:100%;
         }
@@ -283,230 +288,8 @@ section.projects{
 }
 
 
-
-//large screen tablet
-@media (min-width:1024px){
-    header{
-        .logo{
-            position:absolute;
-            top:1.6%;
-            width:4%;
-        }
-        i{
-            display:none;
-        }
-
-        ul{
-            position:absolute;
-            display:flex;
-            right:5%;
-            width:40%;
-            font-size:.9rem;
-            font-family: 'Montserrat', sans-serif;
-            li{
-               margin-right:11%;
-               padding:2%; 
-                a{
-                  color:white;
-                }
-                &:last-child{
-                    background-color:white;
-                    border-radius:25px;
-                    height:10px;
-                    padding-right:4%;
-                    padding-left:4%;
-                    padding-bottom:1.5vw;
-                    a{
-                     color:black;
-                    }
-                }
-            }
-        }
-    }
-
-    section.billboard{
-       
-        .billboard-content{
-            display:none;
-        }
-        .billboard-content-desktop{
-            display:block;
-            text-align:center;
-            font-size:1em;
-            position:relative;
-            top:20%;
-            color:rgb(241, 241, 241);
-            font-family: 'Advent Pro', sans-serif;
-            .developer{
-                font-family: 'Montserrat', sans-serif;
-            }
-            .divider{
-                img{
-                    position:relative;
-                    right:1.3%;
-                }
-            }
-            .contacts{
-                img{
-                    margin-right:2%;
-                }
-            }
-        }
-    }
-
-    section.cosmetic{
-        .creativity{
-            font-size:.9rem;
-            padding-bottom:10%;
-            background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
-            h3{
-                padding:0;
-                float:left;
-                margin-left:8%;
-            }
-            p{
-                text-align:none;
-                padding:11% 30% 2% 8%;
-            }
-            .ITB-logo{
-                display:inline;
-                position:absolute;
-                width:20%;
-                right:1%;
-            }
-            .button-container{
-                float:left;
-                margin-left:8%;
-                button{
-                  padding:35%;
-                }
-            }
-        }
-    }
-    section.aboutMe{
-        font-size:.9rem;
-        margin:0;
-        h1{
-            width:20%;
-            position:relative;
-            left:10%;
-        }
-        p{
-          margin-top:-9.9%;
-          margin-bottom:-8%;
-        }
-    }
-
-    .divider-container{
-        padding-bottom:10%;
-        padding-right:6%;
-    }
-    .second-divider{
-        padding-top:12%;
-        padding-right:7.5%;
-    }
-
-    section.brief{
-        margin-top:-20%;
-        margin-bottom:-30%;
-        font-size:.9rem;
-        display:grid;
-        padding-left:4%;
-        grid-template-columns:48% 48%;
-        div{
-            &:last-child{
-                position:relative;
-                left:55%
-            }
-        }
-    }
-    section.skills{
-        display:none;
-    }
-    section.skills-desktop{
-        display:block;
-        font-size:.9rem;
-        margin-top:-10%;
-        h1{
-            border-top:2px solid black;
-            border-bottom:2px solid black;
-            width:13%;
-            margin-left:39%;
-            padding-left:7%;
-            font-family: 'Montserrat', sans-serif; 
-        }
-        h2,.tech{
-            font-family: 'Montserrat', sans-serif;
-            margin-left:20%;
-        }
-        .tech{
-            display:grid;
-            grid-template-columns:20% 20% 20% 20%;
-            div{
-                margin-top:7vh;
-                div{
-                    margin-left:13%;
-                }
-                &:last-child{
-                    img{
-                        width:80%;
-                        position:relative;
-                        bottom:2.3vw;
-                        right:16%;
-                    }
-                    div{
-                        position:relative;
-                        bottom:4.1vw;
-                    }
-                }
-            }
-        }
-    }
-
-    section.projects{
-        nav{
-            ul{
-                display:grid;
-            }       
-        }
-        .project-links{
-            display:grid;
-            grid-template-columns:33.4% 33.4% 33.4%;
-            img{
-                height:20vw;
-            }
-            .desktop-projects{
-                display:inline;
-            }
-        }
-    }
-    section.contacts{
-        font-size:.9rem;
-        margin-top:5%;
-        #contacts{
-            position:relative;
-            left:8%;
-            width:0;
-            padding-right:-70%;
-            padding-left:-60%;
-        }
-        form{
-            #input{
-               width:20%;
-            }
-        }
-    }
-    footer{
-        .back-to-top{
-            i{
-                padding-right:3.4vw;
-            }
-        }
-    }
-
-}
-
 section.contacts{
+    margin-top:18%;
     h1{
         border-top:2px solid black;
         border-bottom:2px solid black;
@@ -702,6 +485,287 @@ footer{
 
 }
 
+
+//large screen tablet
+@media (min-width:1024px){
+    header{
+        .logo{
+            position:absolute;
+            top:1.6%;
+            width:4%;
+        }
+        i{
+            display:none;
+        }
+
+        #mobile-menu{
+            position:absolute;
+            top:0.5%;
+            display:flex;
+            right:23%;
+            width:40%;
+            font-size:.9rem;
+            font-family: 'Montserrat', sans-serif;
+            li{
+               margin-right:-15%;
+               padding:2%; 
+                a{
+                  color:white;
+                }
+                &:last-child{
+                    background-color:white;
+                    border-radius:25px;
+                    height:10px;
+                    padding-right:4%;
+                    padding-left:4%;
+                    padding-bottom:1.2vw;
+                    a{
+                     color:black;
+                    }
+                }
+            }
+        }
+    }
+
+    section.billboard{
+       
+        .billboard-content{
+            display:none;
+        }
+        .billboard-content-desktop{
+            display:block;
+            text-align:center;
+            font-size:1em;
+            position:relative;
+            top:20%;
+            color:rgb(241, 241, 241);
+            font-family: 'Advent Pro', sans-serif;
+            .developer{
+                font-family: 'Montserrat', sans-serif;
+                z-index:1;
+            }
+            .divider{
+                img{
+                    position:relative;
+                    right:1.3%;
+                    z-index:1;
+                }
+            }
+            .contacts{
+                img{
+                    margin-right:2%;
+                    z-index:1;
+                }
+            }
+        }
+        .computer-illu{
+            opacity:0.8;
+            transform:rotate3d(0,1,0,190deg);
+            width:40%;
+            position:absolute;
+            left:5%;
+            bottom:-140%;
+            z-index:0;
+        }
+    }
+
+    section.cosmetic{
+        .creativity{
+            font-size:.9rem;
+            padding-bottom:10%;
+            background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+            h3{
+                padding:0;
+                float:left;
+                margin-left:8%;
+            }
+            p{
+                text-align:none;
+                padding:11% 30% 2% 8%;
+            }
+            .ITB-logo{
+                display:inline;
+                position:absolute;
+                width:20%;
+                right:1%;
+            }
+            .button-container{
+                float:left;
+                margin-left:8%;
+                button{
+                  padding:35%;
+                }
+            }
+        }
+    }
+    section.aboutMe{
+        font-size:.9rem;
+        margin:0;
+        margin-left:6;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        h1{
+            width:20%;
+            position:relative;
+            left:10%;
+        }
+        p{
+          margin-top:-9.9%;
+          margin-bottom:-8%;
+        }
+    }
+
+    .divider-container{
+        padding-bottom:10%;
+        margin-left:1%;
+    }
+    .second-divider{
+        padding-top:12%;
+        padding-right:6%;
+        margin-left:5%; 
+    }
+
+    section.brief{
+        margin-top:-20%;
+        margin-bottom:-30%;
+        font-size:.9rem;
+        display:grid;
+        padding-left:4%;
+        grid-template-columns:48% 48%;
+        div{
+            &:last-child{
+                position:relative;
+                left:55%
+            }
+        }
+    }
+    section.skills{
+        display:none;
+    }
+    section.skills-desktop{
+        display:block;
+        font-size:.9rem;
+        margin-top:-10%;
+        h1{
+            border-top:2px solid black;
+            border-bottom:2px solid black;
+            width:12%;
+            margin-left:39%;
+            padding-left:6.5%;
+            padding-right:0%;
+            font-family: 'Montserrat', sans-serif; 
+        }
+        h2,.tech{
+            font-family: 'Montserrat', sans-serif;
+            margin-left:20%;
+        }
+        .tech{
+            display:grid;
+            grid-template-columns:20% 20% 20% 20%;
+            div{
+                margin-top:7vh;
+                div{
+                    margin-left:13%;
+                }
+                &:last-child{
+                    img{
+                        width:80%;
+                        position:relative;
+                        bottom:2.3vw;
+                        right:16%;
+                    }
+                    div{
+                        position:relative;
+                        bottom:4.1vw;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    section.projects{
+        .projects-background{
+            height:15vw;
+            h1{
+                font-size:1.5rem;
+                width:0px;
+                padding-left:5%;
+                padding-right:14%;
+                left:10%;
+            }
+        }
+        nav{
+            ul{
+                display:grid;
+            }       
+        }
+        .project-links{
+            display:grid;
+            grid-template-columns:33.4% 33.4% 33.4%;
+            img{
+                height:20vw;
+            }
+            .desktop-projects{
+                display:inline;
+            }
+        }
+    }
+    section.contacts{
+        font-size:.9rem;
+        margin-top:5%;
+        #contacts{
+            position:relative;
+            left:12%;
+            width:0;
+            margin-bottom:-8%;
+            padding-right:14%;
+            padding-left:5%;
+        }
+        form{
+            
+            #input{
+                padding:1%;
+                width:30%;
+            }
+            #textarea{
+                width:32.7%;
+                left:0.3%;
+            }
+            #submit-button{
+                width:12%;
+                padding:1.1%;
+                padding-bottom:1.5%;
+            }
+        }
+    }
+    footer{
+        font-size:.8rem;
+        height:240px;
+        .back-to-top{
+            margin-right:2%;
+            i{
+                margin-right:8.5%;
+            }
+            a{
+                margin-left:2%;
+                position:relative;
+                bottom:5vw;
+            }
+        }
+        .social-media{
+            justify-content: none;
+            margin-left:43.5%;
+            margin-right:35%;
+             
+            img{
+                width:80%;
+            }
+        }
+        .copy-rights{
+            font-size:.9rem;
+        }
+    }
+
+}
 
 
 

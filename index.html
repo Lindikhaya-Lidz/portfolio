@@ -16,12 +16,12 @@
     <body id='top'>
         <header>
             <img src='assets/logo 2.png' class='logo' alt='logo'>
-            <i class="bi bi-list-nested"></i>
-            <ul>
-                <li><a href=''>About</a></li>
-                <li><a href=''>Skills </a></li>
+            <i class="bi bi-list-nested menu-bar"></i>
+            <ul id='mobile-menu' class='desktop-menu'>
+                <li><a href='#aboutMe'>About</a></li>
+                <li><a href='#skills'>Skills </a></li>
                 <li><a href=''>Portfolio </a></li>
-                <li><a href=''>Contact</a></li>
+                <li><a href='#contacts-link'>Contact</a></li>
             </ul>
         </header>
         <section class='billboard'>
@@ -52,6 +52,7 @@
                     <img src='assets/ant-design_github-filled.png' alt='github'>
                     <img src='assets/entypo-social_linkedin-with-circle.png' alt='linkedin'>
                 </div>
+                <img src='assets/marketing-manager-3025704-2526902.png' alt='' class='computer-illu'>
             </div>
         </section>
         <section class='cosmetic'>
@@ -81,7 +82,7 @@
                 </div> 
             </div>
         </section>
-        <section class="aboutMe">
+        <section id='aboutMe' class="aboutMe">
             <h1>About Me</h1>
             <p>My Name is Lidz Maqolwana and I enjoy writing web programmes for almost
                the same reasons as others do, which is as frontend developers we get to play, play around
@@ -91,8 +92,9 @@
                are done or how they should be are not based on truth, so inquiry and exploration exposes those untruths.<br>I would
                love to write more about myself and what interests me, but its almost impossible to capture who I'am in words, I think
                we as people can only experience who we are because who we are is mostly based on how we feel about thing, and therefore its impossible to accuratly discribe 
-               feelings, thats why I cant continue writing about myself unless you prefer lies, please forgive.      
+               feelings, thats why I cannot continue writing about myself unless you prefer lies.      
             </p>
+            <img src='assets/man-3027481-2526700.png' alt='' class='man-uli'>
         </section>
         <div class='divider-container'>
             <img src='assets/separatorBlack 7.png' alt=''>
@@ -125,7 +127,7 @@
         <div class='divider-container second-divider'>
             <img src='assets/separatorBlack 7.png' alt=''>
         </div>
-        <section class='skills'>
+        <section id='skills' class='skills'>
             <div class='skills-mobile'>
                 <h1>Skills</h1>
                 <h2 class='Using'>Using Now:</h2>
@@ -159,7 +161,7 @@
                     </div>
                     <div>
                         <img src='assets/js.svg' alt='js'>
-                        <div>Javascrip</div>
+                        <div>Javascript</div>
                     </div>
                     <div>
                         <img src='assets/bootstrap-solid 1.png' alt='boostrap'>
@@ -183,13 +185,6 @@
             <div class='projects-background'>
                 <h1>Projects</h1>
             </div>
-            <nav>
-                <ul>
-                    <li style='padding-left:30%'><a href='#'>All</a></li>
-                    <li style='padding-left:24%'><a href='#'>Pages</a></li>
-                    <li style='position:relative;left:37%;padding-left:20%'><a href='#'>web Apps</a></li>
-                </ul>
-            </nav>
             <div class='project-links'>
                 <img src='assets/Landing_Page_Design.png'  alt='Dating-app-landing-page'>
                 <img src='assets/Sign Up Page Design (Community).png'  alt='sigin-frontend-auth'>
@@ -199,14 +194,14 @@
                 <img src='assets/3D Woo APP Design.png' class='desktop-projects' alt='3D Woo'>
             </div>
         </section>
-        <section class="contacts">
+        <section id='contacts-link' class="contacts">
             <h1 id='contacts'>contacts</h1>
             <form>
                 <input id='input' type="text" placeholder='Enter your name'><br>
                 <input id='input' type="text" placeholder='Enter your Email'><br>
                 <input id='input' type="number" placeholder="Enter Your Phone Number"><br>
-                <textarea name='message' rows='10' cols='25' placeholder="Message"></textarea><br>
-                <input id='input' type='submit' class='submit-button' value='submit'>
+                <textarea id='textarea' name='message' rows='10' cols='25' placeholder="Message"></textarea><br>
+                <input id='submit-button' type='submit' class='submit-button' value='submit'>
             </form>
         </section>
         <footer>

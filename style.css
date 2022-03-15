@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF));
@@ -26,8 +27,41 @@ header .logo {
   top: 2%;
 }
 
-header ul {
+header #mobile-menu {
+  position: absolute;
+  top: -2vw;
   display: none;
+  width: 88%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 2;
+  -webkit-animation-name: slide-down;
+          animation-name: slide-down;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+}
+
+@-webkit-keyframes slide-down {
+  from {
+    top: -70vw;
+  }
+  to {
+    top: -2vw;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    top: -70vw;
+  }
+  to {
+    top: -2vw;
+  }
+}
+
+header #mobile-menu li {
+  padding: 5%;
+  margin-left: 32%;
 }
 
 header i {
@@ -164,6 +198,13 @@ section.aboutMe p {
   padding: 0 8% 0 8%;
 }
 
+section.aboutMe .man-uli {
+  width: 15%;
+  margin-right: 80%;
+  opacity: 0.7;
+  margin-bottom: -20%;
+}
+
 .divider-container {
   text-align: center;
   margin-top: 20%;
@@ -255,41 +296,13 @@ section.projects h1 {
   margin-left: 29%;
   padding-left: 15%;
   padding-right: 3%;
+  margin-bottom: 10%;
   position: relative;
   top: 30%;
 }
 
-section.projects nav {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Smooch Sans', sans-serif;
-  color: #d1cfcf;
-  position: relative;
-  bottom: 5.2vh;
-  font-size: 1.8rem;
-}
-
-section.projects nav ul {
-  position: relative;
-  right: 0%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 48% 48%;
-      grid-template-columns: 48% 48%;
-}
-
-section.projects nav ul li {
-  border-bottom: 1.5px solid #b9b8b8;
-}
-
-section.projects nav ul li:last-child {
-  position: relative;
-  margin-top: 20%;
-  margin-bottom: 30%;
-}
-
 section.projects .project-links {
   position: relative;
-  bottom: 12vh;
 }
 
 section.projects .project-links img {
@@ -300,202 +313,8 @@ section.projects .project-links .desktop-projects {
   display: none;
 }
 
-@media (min-width: 1024px) {
-  header .logo {
-    position: absolute;
-    top: 1.6%;
-    width: 4%;
-  }
-  header i {
-    display: none;
-  }
-  header ul {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    right: 5%;
-    width: 40%;
-    font-size: .9rem;
-    font-family: 'Montserrat', sans-serif;
-  }
-  header ul li {
-    margin-right: 11%;
-    padding: 2%;
-  }
-  header ul li a {
-    color: white;
-  }
-  header ul li:last-child {
-    background-color: white;
-    border-radius: 25px;
-    height: 10px;
-    padding-right: 4%;
-    padding-left: 4%;
-    padding-bottom: 1.5vw;
-  }
-  header ul li:last-child a {
-    color: black;
-  }
-  section.billboard .billboard-content {
-    display: none;
-  }
-  section.billboard .billboard-content-desktop {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    position: relative;
-    top: 20%;
-    color: #f1f1f1;
-    font-family: 'Advent Pro', sans-serif;
-  }
-  section.billboard .billboard-content-desktop .developer {
-    font-family: 'Montserrat', sans-serif;
-  }
-  section.billboard .billboard-content-desktop .divider img {
-    position: relative;
-    right: 1.3%;
-  }
-  section.billboard .billboard-content-desktop .contacts img {
-    margin-right: 2%;
-  }
-  section.cosmetic .creativity {
-    font-size: .9rem;
-    padding-bottom: 10%;
-    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
-  }
-  section.cosmetic .creativity h3 {
-    padding: 0;
-    float: left;
-    margin-left: 8%;
-  }
-  section.cosmetic .creativity p {
-    text-align: none;
-    padding: 11% 30% 2% 8%;
-  }
-  section.cosmetic .creativity .ITB-logo {
-    display: inline;
-    position: absolute;
-    width: 20%;
-    right: 1%;
-  }
-  section.cosmetic .creativity .button-container {
-    float: left;
-    margin-left: 8%;
-  }
-  section.cosmetic .creativity .button-container button {
-    padding: 35%;
-  }
-  section.aboutMe {
-    font-size: .9rem;
-    margin: 0;
-  }
-  section.aboutMe h1 {
-    width: 20%;
-    position: relative;
-    left: 10%;
-  }
-  section.aboutMe p {
-    margin-top: -9.9%;
-    margin-bottom: -8%;
-  }
-  .divider-container {
-    padding-bottom: 10%;
-    padding-right: 6%;
-  }
-  .second-divider {
-    padding-top: 12%;
-    padding-right: 7.5%;
-  }
-  section.brief {
-    margin-top: -20%;
-    margin-bottom: -30%;
-    font-size: .9rem;
-    display: -ms-grid;
-    display: grid;
-    padding-left: 4%;
-    -ms-grid-columns: 48% 48%;
-        grid-template-columns: 48% 48%;
-  }
-  section.brief div:last-child {
-    position: relative;
-    left: 55%;
-  }
-  section.skills {
-    display: none;
-  }
-  section.skills-desktop {
-    display: block;
-    font-size: .9rem;
-    margin-top: -10%;
-  }
-  section.skills-desktop h1 {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    width: 13%;
-    margin-left: 39%;
-    padding-left: 7%;
-    font-family: 'Montserrat', sans-serif;
-  }
-  section.skills-desktop h2, section.skills-desktop .tech {
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 20%;
-  }
-  section.skills-desktop .tech {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20% 20% 20% 20%;
-        grid-template-columns: 20% 20% 20% 20%;
-  }
-  section.skills-desktop .tech div {
-    margin-top: 7vh;
-  }
-  section.skills-desktop .tech div div {
-    margin-left: 13%;
-  }
-  section.skills-desktop .tech div:last-child img {
-    width: 80%;
-    position: relative;
-    bottom: 2.3vw;
-    right: 16%;
-  }
-  section.skills-desktop .tech div:last-child div {
-    position: relative;
-    bottom: 4.1vw;
-  }
-  section.projects nav ul {
-    display: -ms-grid;
-    display: grid;
-  }
-  section.projects .project-links {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 33.4% 33.4% 33.4%;
-        grid-template-columns: 33.4% 33.4% 33.4%;
-  }
-  section.projects .project-links img {
-    height: 20vw;
-  }
-  section.projects .project-links .desktop-projects {
-    display: inline;
-  }
-  section.contacts {
-    font-size: .9rem;
-    margin-top: 5%;
-  }
-  section.contacts #contacts {
-    position: relative;
-    left: 8%;
-    width: 0;
-    padding-right: -70%;
-    padding-left: -60%;
-  }
-  section.contacts form #input {
-    width: 20%;
-  }
-  footer .back-to-top i {
-    padding-right: 3.4vw;
-  }
+section.contacts {
+  margin-top: 18%;
 }
 
 section.contacts h1 {
@@ -677,6 +496,267 @@ footer .copy-rights {
   }
   footer .copy-rights {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .logo {
+    position: absolute;
+    top: 1.6%;
+    width: 4%;
+  }
+  header i {
+    display: none;
+  }
+  header #mobile-menu {
+    position: absolute;
+    top: 0.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 23%;
+    width: 40%;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  header #mobile-menu li {
+    margin-right: -15%;
+    padding: 2%;
+  }
+  header #mobile-menu li a {
+    color: white;
+  }
+  header #mobile-menu li:last-child {
+    background-color: white;
+    border-radius: 25px;
+    height: 10px;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 1.2vw;
+  }
+  header #mobile-menu li:last-child a {
+    color: black;
+  }
+  section.billboard .billboard-content {
+    display: none;
+  }
+  section.billboard .billboard-content-desktop {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    top: 20%;
+    color: #f1f1f1;
+    font-family: 'Advent Pro', sans-serif;
+  }
+  section.billboard .billboard-content-desktop .developer {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+  }
+  section.billboard .billboard-content-desktop .divider img {
+    position: relative;
+    right: 1.3%;
+    z-index: 1;
+  }
+  section.billboard .billboard-content-desktop .contacts img {
+    margin-right: 2%;
+    z-index: 1;
+  }
+  section.billboard .computer-illu {
+    opacity: 0.8;
+    -webkit-transform: rotate3d(0, 1, 0, 190deg);
+            transform: rotate3d(0, 1, 0, 190deg);
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    bottom: -140%;
+    z-index: 0;
+  }
+  section.cosmetic .creativity {
+    font-size: .9rem;
+    padding-bottom: 10%;
+    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+  }
+  section.cosmetic .creativity h3 {
+    padding: 0;
+    float: left;
+    margin-left: 8%;
+  }
+  section.cosmetic .creativity p {
+    text-align: none;
+    padding: 11% 30% 2% 8%;
+  }
+  section.cosmetic .creativity .ITB-logo {
+    display: inline;
+    position: absolute;
+    width: 20%;
+    right: 1%;
+  }
+  section.cosmetic .creativity .button-container {
+    float: left;
+    margin-left: 8%;
+  }
+  section.cosmetic .creativity .button-container button {
+    padding: 35%;
+  }
+  section.aboutMe {
+    font-size: .9rem;
+    margin: 0;
+    margin-left: 6;
+  }
+  section.aboutMe h1 {
+    width: 20%;
+    position: relative;
+    left: 10%;
+  }
+  section.aboutMe p {
+    margin-top: -9.9%;
+    margin-bottom: -8%;
+  }
+  .divider-container {
+    padding-bottom: 10%;
+    margin-left: 1%;
+  }
+  .second-divider {
+    padding-top: 12%;
+    padding-right: 6%;
+    margin-left: 5%;
+  }
+  section.brief {
+    margin-top: -20%;
+    margin-bottom: -30%;
+    font-size: .9rem;
+    display: -ms-grid;
+    display: grid;
+    padding-left: 4%;
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
+  }
+  section.brief div:last-child {
+    position: relative;
+    left: 55%;
+  }
+  section.skills {
+    display: none;
+  }
+  section.skills-desktop {
+    display: block;
+    font-size: .9rem;
+    margin-top: -10%;
+  }
+  section.skills-desktop h1 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 12%;
+    margin-left: 39%;
+    padding-left: 6.5%;
+    padding-right: 0%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  section.skills-desktop h2, section.skills-desktop .tech {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20%;
+  }
+  section.skills-desktop .tech {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20%;
+  }
+  section.skills-desktop .tech div {
+    margin-top: 7vh;
+  }
+  section.skills-desktop .tech div div {
+    margin-left: 13%;
+  }
+  section.skills-desktop .tech div:last-child img {
+    width: 80%;
+    position: relative;
+    bottom: 2.3vw;
+    right: 16%;
+  }
+  section.skills-desktop .tech div:last-child div {
+    position: relative;
+    bottom: 4.1vw;
+  }
+  section.projects .projects-background {
+    height: 15vw;
+  }
+  section.projects .projects-background h1 {
+    font-size: 1.5rem;
+    width: 0px;
+    padding-left: 5%;
+    padding-right: 14%;
+    left: 10%;
+  }
+  section.projects nav ul {
+    display: -ms-grid;
+    display: grid;
+  }
+  section.projects .project-links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.4% 33.4% 33.4%;
+        grid-template-columns: 33.4% 33.4% 33.4%;
+  }
+  section.projects .project-links img {
+    height: 20vw;
+  }
+  section.projects .project-links .desktop-projects {
+    display: inline;
+  }
+  section.contacts {
+    font-size: .9rem;
+    margin-top: 5%;
+  }
+  section.contacts #contacts {
+    position: relative;
+    left: 12%;
+    width: 0;
+    margin-bottom: -8%;
+    padding-right: 14%;
+    padding-left: 5%;
+  }
+  section.contacts form #input {
+    padding: 1%;
+    width: 30%;
+  }
+  section.contacts form #textarea {
+    width: 32.7%;
+    left: 0.3%;
+  }
+  section.contacts form #submit-button {
+    width: 12%;
+    padding: 1.1%;
+    padding-bottom: 1.5%;
+  }
+  footer {
+    font-size: .8rem;
+    height: 240px;
+  }
+  footer .back-to-top {
+    margin-right: 2%;
+  }
+  footer .back-to-top i {
+    margin-right: 8.5%;
+  }
+  footer .back-to-top a {
+    margin-left: 2%;
+    position: relative;
+    bottom: 5vw;
+  }
+  footer .social-media {
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    margin-left: 43.5%;
+    margin-right: 35%;
+  }
+  footer .social-media img {
+    width: 80%;
+  }
+  footer .copy-rights {
+    font-size: .9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
