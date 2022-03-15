@@ -80,6 +80,13 @@ section.billboard {
   color: #fafafa;
 }
 
+section.billboard .hi-bubble {
+  position: absolute;
+  width: 10%;
+  top: 23%;
+  left: 12%;
+}
+
 section.billboard .billboard-content p {
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
@@ -432,6 +439,10 @@ footer .copy-rights {
   section.billboard {
     bottom: 29px;
   }
+  section.billboard .hi-bubble {
+    top: 15%;
+    left: 23%;
+  }
   section.billboard .billboard-content {
     position: relative;
     bottom: 20vw;
@@ -537,6 +548,10 @@ footer .copy-rights {
   header #mobile-menu li:last-child a {
     color: black;
   }
+  section.billboard .hi-bubble {
+    width: 7%;
+    left: 26.5%;
+  }
   section.billboard .billboard-content {
     display: none;
   }
@@ -564,12 +579,10 @@ footer .copy-rights {
   }
   section.billboard .computer-illu {
     opacity: 0.8;
-    -webkit-transform: rotate3d(0, 1, 0, 190deg);
-            transform: rotate3d(0, 1, 0, 190deg);
     width: 40%;
     position: absolute;
-    left: 5%;
-    bottom: -140%;
+    left: 60%;
+    bottom: -200%;
     z-index: 0;
   }
   section.cosmetic .creativity {
@@ -607,7 +620,7 @@ footer .copy-rights {
   section.aboutMe h1 {
     width: 20%;
     position: relative;
-    left: 10%;
+    left: 13%;
   }
   section.aboutMe p {
     margin-top: -9.9%;
@@ -620,7 +633,7 @@ footer .copy-rights {
   .second-divider {
     padding-top: 12%;
     padding-right: 6%;
-    margin-left: 5%;
+    margin-left: 6%;
   }
   section.brief {
     margin-top: -20%;
@@ -647,15 +660,15 @@ footer .copy-rights {
   section.skills-desktop h1 {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    width: 12%;
-    margin-left: 39%;
+    width: 10%;
+    margin-left: 42%;
     padding-left: 6.5%;
-    padding-right: 0%;
+    padding-right: 1%;
     font-family: 'Montserrat', sans-serif;
   }
   section.skills-desktop h2, section.skills-desktop .tech {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 20%;
+    margin-left: 25%;
   }
   section.skills-desktop .tech {
     display: -ms-grid;
@@ -667,27 +680,35 @@ footer .copy-rights {
     margin-top: 7vh;
   }
   section.skills-desktop .tech div div {
-    margin-left: 13%;
+    margin-left: 14%;
+  }
+  section.skills-desktop .tech div:nth-child(4) div, section.skills-desktop .tech div:nth-child(5) div, section.skills-desktop .tech div:nth-child(7) div, section.skills-desktop .tech div:nth-child(8) div {
+    margin-left: 5%;
+  }
+  section.skills-desktop .tech div:nth-child(6) div {
+    position: relative;
+    top: 2vh;
+    margin: 20%;
   }
   section.skills-desktop .tech div:last-child img {
     width: 80%;
     position: relative;
-    bottom: 2.3vw;
+    bottom: 1.8vw;
     right: 16%;
   }
   section.skills-desktop .tech div:last-child div {
     position: relative;
-    bottom: 4.1vw;
+    bottom: 3.3vw;
   }
   section.projects .projects-background {
     height: 15vw;
   }
   section.projects .projects-background h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     width: 0px;
-    padding-left: 5%;
-    padding-right: 14%;
-    left: 10%;
+    padding-left: 7%;
+    padding-right: 12%;
+    left: 12%;
   }
   section.projects nav ul {
     display: -ms-grid;
@@ -711,11 +732,11 @@ footer .copy-rights {
   }
   section.contacts #contacts {
     position: relative;
-    left: 12%;
+    left: 13%;
     width: 0;
     margin-bottom: -8%;
     padding-right: 14%;
-    padding-left: 5%;
+    padding-left: 6%;
   }
   section.contacts form #input {
     padding: 1%;
@@ -739,18 +760,20 @@ footer .copy-rights {
   }
   footer .back-to-top i {
     margin-right: 8.5%;
+    font-size: 1.3rem;
   }
   footer .back-to-top a {
-    margin-left: 2%;
+    margin-left: 2.5%;
     position: relative;
-    bottom: 5vw;
+    top: 7vh;
   }
   footer .social-media {
     -webkit-box-pack: none;
         -ms-flex-pack: none;
             justify-content: none;
     margin-left: 43.5%;
-    margin-right: 35%;
+    margin-right: 37%;
+    margin-top: 4%;
   }
   footer .social-media img {
     width: 80%;
